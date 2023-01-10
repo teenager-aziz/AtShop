@@ -1,0 +1,51 @@
+@import url(font.css);
+
+:root {
+    --second-bg-color: #F5F5F5;
+    --main-bg-color: #fff;
+    --third-bg-color: #D9D9D9;
+    --white: #fff;
+    --black: #000;
+    --red: #963B40;
+    --f_Inter: 'Inter';
+    --f_Poppins: 'Poppins';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--f_Poppins);
+    background: var(--main-bg-color);
+    overflow-x: hidden;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: unset;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.bg-second {
+    background: var(--second-bg-color);
+}
+
+.bg-main {
+    background: var(--main-bg-color);
+}
