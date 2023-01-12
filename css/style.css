@@ -9,6 +9,7 @@
     --red: #963B40;
     --f_Inter: 'Inter';
     --f_Poppins: 'Poppins';
+    --icon_Color: #546171;
 }
 
 * {
@@ -48,4 +49,141 @@ li {
 
 .bg-main {
     background: var(--main-bg-color);
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Top header start -=-=-=-=-=-=-=-=-=- */
+
+.top__header {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top__header ul {
+    display: flex;
+}
+
+.top__header a {
+    font-size: 13px;
+}
+
+ul.list > li {
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #000;
+}
+
+ul.list > li:last-child {
+    border-right: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown i {
+    margin-left: 7px;
+    transition: .4s;
+}
+
+.dropdown:hover i {
+    transform: rotate(180deg);
+}
+
+.dropdown__content {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    box-shadow: rgba(68, 68, 68, 0.622) 0px 7px 29px 0;
+    position: absolute;
+    top: calc(100% + 20px);
+    visibility: hidden;
+    transition: all .4s;
+    opacity: 0;
+}
+
+.dropdown:hover .dropdown__content {
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown__content > li > a {
+    padding: 10px;
+}
+
+.dropdown__content > li:hover {
+    color: var(--red);
+}
+
+/* ------------------- mid__header start --------------- */
+
+.mid__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.search {
+    background: var(--second-bg-color);
+    max-width: 547px;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.search i {
+    font-size: 20px;
+    color: var(--icon_Color);
+}
+
+.user__menu {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    column-gap: 30px;
+}
+
+
+.box img {
+    width: 100%;
+}
+
+.mega__content {
+    background: var(--main-bg-color);
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.25);
+    padding: 45px 40px;
+}
+
+.mega__content ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.mega__content ul > li > a {
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(68, 68, 68, 0.542);
+    width: max-content;
 }
